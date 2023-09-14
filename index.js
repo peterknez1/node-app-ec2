@@ -48,3 +48,9 @@ app.get('/data', (req, res) => {
     res.json(result); // Send the result as a JSON response
   });
 });
+
+app.post('/ajax-route', (req, res) => {
+  // Process the request and send the response
+  res.send('Response from the Node.js server');
+});
+
