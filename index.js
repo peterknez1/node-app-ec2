@@ -1,13 +1,13 @@
 import express from 'express';
+import mysql from 'mysql';
 
 const app = express();
-const mysql = require('mysql');
 
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'proximapassword',
-  database: ''
+  database: 'wp'
 });
 
 db.connect((err) => {
